@@ -13,3 +13,10 @@ User {
 
 - Deve ser possível criar um usuário passando: nome, email, password e um arquivo
 - Deve ser possível listar os usuários
+
+##
+npm init -y
+##
+npm install mongoose express nodemon
+ jsonwebtoken bcrypt dotenv yup
+
