@@ -16,7 +16,7 @@ class UserRepository{
     }
 
     async findByEmail(email){ 
-        return this.model.findByEmail({email})
+        return this.model.findOne({email})
     }
 
 

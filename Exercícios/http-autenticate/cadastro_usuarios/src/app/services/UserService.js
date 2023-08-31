@@ -1,4 +1,5 @@
 import {hashSync} from "bcrypt"
+import { Crypt } from "../../utils/Crypt.js"
 
 class UserService{
     constructor(repository){
@@ -6,13 +7,22 @@ class UserService{
     }
 
     async create(data){
+        const userAlreadExists = await this.repository.findByEmail(data.email)
+        if(userAlreadExists){
+            return{
+                error: true,
+                message: "Usuário ja existe",
+                status: 400
+            }
+        }
+
         const user = {
             ...data,
-        password: hashSync(data.password, 6)
+            password: Crypt.encrypt(data.password)
+        }
+        return this.repository.create(user)
     }
-    const result = await this.repository.create(user)
-    return result    
-    }
+   
 
     async findAll(){
         const result = await this.repository.findAll()
