@@ -15,7 +15,7 @@ class AuthService{
                 message: "E-mail não encontrado"
             }
         }
-        const passwordIsValid = compareSync(data.passward, user.passward)
+        const passwordIsValid = compareSync(data.password, user.password)
         if(!passwordIsValid){
             return{
                 error: true,

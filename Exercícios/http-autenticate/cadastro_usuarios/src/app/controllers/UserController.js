@@ -21,8 +21,18 @@ class UserController{
         await bodySchema.validate(body)
     }
     catch(erro){
-        return res.status(400).json(erro.errors)
+        return res.status(400).json({ 
+            error: true, 
+            message: erro.errors, 
+            status: 400 })
     }
+
+    const user = await this.service.create(body)
+    if("error" in user){
+        return res.status(user.status).json(user)
+
+    }
+    return res.status(201).json(user)
 
 }
 }
