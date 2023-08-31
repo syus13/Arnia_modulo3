@@ -7,7 +7,7 @@ class AuthService{
     }
 
     async login(data){
-        const user = this.userRepository.findByEmail(data.email)
+        const user = await this.userRepository.findByEmail(data.email)
         if(!user){
             return{
                 error: true,

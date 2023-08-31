@@ -1,8 +1,8 @@
-import bcrypt from "bcrypt"
+import {hashSync} from "bcrypt"
 
 class Crypt {
   static encrypt(text) {
-    return bcrypt.hashSync(text, 10)
+    return hashSync(text, 10)
   }
 }
 

@@ -35,6 +35,14 @@ class UserController{
     return res.status(201).json(user)
 
 }
+ async findAll(req, res){
+    
+const result = await this.service.findAll()
+return res.status(200).json(result)
+
+
+ }
+
 }
 
 export {UserController};

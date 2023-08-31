@@ -1,4 +1,3 @@
-import {hashSync} from "bcrypt"
 import { Crypt } from "../../utils/Crypt.js"
 
 class UserService{

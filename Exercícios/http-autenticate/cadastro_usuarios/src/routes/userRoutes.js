@@ -5,6 +5,7 @@ const userRoutes = Router()
 const controller = MakeUser.getInstance()
 
     userRoutes.post("/users", controller.create.bind(controller))
+    userRoutes.get("/users", controller.findAll.bind(controller))
 
 
 
