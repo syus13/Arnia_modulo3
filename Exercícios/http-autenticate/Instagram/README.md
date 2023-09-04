@@ -9,6 +9,8 @@ User {
   photo: ObjectId,
 }
 
+
+
 Photo {
   filename: String,
   mimetype: String,

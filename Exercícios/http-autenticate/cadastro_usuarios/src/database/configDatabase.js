@@ -1,4 +1,4 @@
-import mongoose,{connect} from 'mongoose'
+import mongoose, {connect} from 'mongoose'
 
 class Database{
 static async initialize(){
