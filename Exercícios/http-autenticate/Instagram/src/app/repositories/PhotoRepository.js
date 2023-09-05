@@ -4,7 +4,7 @@ class PhotoRepository{
     }
 
     async create(data){
-        return hthis.model.create(data)
+        return this.model.create(data)
     }
 }
 

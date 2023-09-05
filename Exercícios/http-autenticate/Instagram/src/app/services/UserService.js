@@ -2,7 +2,7 @@ import {Crypt} from "bcrypt"
 
 class UserService{
     constructor(repository, photoRepository){
-        this.repositoru = repository
+        this.repository = repository
         this.photoRepository = photoRepository
     }
 async create(data){
