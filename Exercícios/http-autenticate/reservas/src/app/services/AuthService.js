@@ -1,5 +1,6 @@
 import { CommonError } from "../../utils/CommonError.js"
 import { Crypt } from "../../utils/Crypt.js"
+import  JWT  from "jsonwebtoken"
 
 
 class AuthService{

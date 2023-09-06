@@ -23,7 +23,7 @@ class UserController {
   }
 
   async findAll(req, res){
-    const result = await this.service.find()
+    const result = await this.service.findAll()
     return res.json(result)
   }
 

@@ -23,6 +23,11 @@ async create(data){
     return await this.repository.create(user)
 }
 
+async findAll(){
+    const result = await this.repository.findAll()
+    return result
+}
+
 }
 
 export{UserService}
