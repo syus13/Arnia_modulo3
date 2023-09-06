@@ -35,7 +35,7 @@ Usuario {
    - O sistema verifica se as credenciais estão corretas e autentica o usuário.
 
 3. *Busca de Hotéis:*
-   - Os usuários podem pesquisar hotéis com base em critérios como destino, datas de entrada e saída.
+   - Os usuários podem pesquisar hotéis com base no destino.
    - O sistema retorna uma lista de hotéis que atendem aos critérios de busca.
 
 4. *Reserva de Quarto:*
@@ -53,10 +53,4 @@ Usuario {
    - O sistema atualiza o status da reserva e disponibiliza os quartos cancelados novamente para reservas futuras.
 
    dependencias
-   mongoose,
-   express,
-   yup,
-   nodemon,
-   jsonwebtoken,
-   dotenv,
-   bcrypt
+   mongoose express yup nodemon jsonwebtoken dotenv bcrypt
