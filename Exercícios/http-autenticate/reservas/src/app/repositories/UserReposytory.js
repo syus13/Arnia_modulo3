@@ -10,6 +10,10 @@ class UserRepository{
      findByEmail(email){
         return this.model.findOne({email})
     }
+
+    findAll(){
+        return this.model.find()
+    }
 }
 
 export {UserRepository}

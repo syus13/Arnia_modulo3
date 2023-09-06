@@ -1,6 +1,6 @@
 import * as yup from "yup"
 
-class AuthValidade {
+class AuthValidate {
   static async isValid(data) {
     const authSchema = yup.object().shape({
       email: yup.string().email().required(),
@@ -16,4 +16,4 @@ class AuthValidade {
   }
 }
 
-export { AuthValidade }
+export { AuthValidate }
