@@ -51,3 +51,12 @@ Usuario {
 6. *Cancelamento de Reserva:*
    - Os usuários podem cancelar uma reserva existente antes da data de entrada.
    - O sistema atualiza o status da reserva e disponibiliza os quartos cancelados novamente para reservas futuras.
+
+   dependencias
+   mongoose,
+   express,
+   yup,
+   nodemon,
+   jsonwebtoken,
+   dotenv,
+   bcrypt

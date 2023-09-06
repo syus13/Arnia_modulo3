@@ -1,6 +1,6 @@
 class UserRepository{
     constructor(model){
-        this.mddel = model
+        this.model = model
     }
 
     async create(data){
