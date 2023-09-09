@@ -14,6 +14,8 @@ describe("User", () => {
       // Validação
       expected(result).toEqual({ id: 1254, name: "Guilherme", email: "testemail@email" });
     });
+
+
   
     it("deve ser capaz de atualizar um usuário no banco de dados", () => {
       // Preparação
@@ -29,6 +31,8 @@ describe("User", () => {
       expected(result).toBe(expected);
       expected(databaseMock[0].name).toBe(newData.name);
     });
+
+    
   
     it("deve ser capaz de excluir um usuário do banco de dados", () => {
       // Preparação
