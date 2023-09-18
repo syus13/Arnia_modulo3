@@ -53,4 +53,7 @@ Usuario {
    - O sistema atualiza o status da reserva e disponibiliza os quartos cancelados novamente para reservas futuras.
 
    dependencias
-   mongoose express yup nodemon jsonwebtoken dotenv bcrypt
+  npm install typescript tsx dotenv express mongoose bcrypt tsup vitest dotenv -D
+
+
+  api_hotel
